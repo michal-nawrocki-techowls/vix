@@ -5,14 +5,15 @@ and this two sites need to talk to each another in terms of scheduling services 
 ![Standard communication](img/standard-comunication.png)
 
 Standard communication between fleet operator and vehicle workshop \
-*FMS - Fleet Management Software
+*FMS - Fleet Management Software*
 
 A lot of software providers build solutions suitable for them and do not following any standards as a result implementations are not compatible and can't share information between systems automatically.
-#### Our goal for this project
+
+## Our goal for this project
 
  - Build secure simple to implement communication standard to allow share information automatically between fleet operators and vehicle workshops
  - Keep implementation lean and simple
- - Be able to communicate with any FMS certificated by "Fleet Software Exchange Standards"
+ - Be able to communicate with between any vehicle workshop software and Fleet Management software certificated by "Fleet Software Exchange Standards"
 
 
 ## Communication and transportation channel
@@ -30,4 +31,7 @@ when you see this logo it means product is compatible with "Fleet Software Excha
 
 
  ### Acceptance criteria
+ [Acceptance criteria for Fleet Management Software](./acceptance-critera/fms.md) \
+ [Acceptance criteria for Vehicle Workshops Software](./acceptance-critera/vws.md)
+
  ### Postman test
