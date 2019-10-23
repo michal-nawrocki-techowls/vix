@@ -31,7 +31,7 @@ when you see this logo it means product is compatible with "Fleet Software Excha
 
 
  ### Acceptance criteria
- [Acceptance criteria for Fleet Management Software](./acceptance-critera/fms.md) \
- [Acceptance criteria for Vehicle Workshops Software](./acceptance-critera/vws.md)
+ [Acceptance criteria for Fleet Management Software](./acceptance-criteria/fms.md) \
+ [Acceptance criteria for Vehicle Workshops Software](./acceptance-criteria/vws.md)
 
  ### Postman test
