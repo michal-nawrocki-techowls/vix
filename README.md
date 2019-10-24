@@ -7,26 +7,29 @@ and this two sites need to talk to each another in terms of scheduling services 
 Standard communication between fleet operator and vehicle workshop \
 *FMS - Fleet Management Software*
 
-A lot of software providers build solutions suitable for them and do not following any standards as a result implementations are not compatible and can't share information between systems automatically.
+## Problems to solve
+- Scheduling vehicle inspections consume a lot of time for fleet manager.
+- Maintaining documentation on both sides Fleet Operator and Vehicle Workshop consume time and can be done automatically.
 
 ## Our goal for this project
 
- - Build secure simple to implement communication standard to allow share information automatically between fleet operators and vehicle workshops
+ - Build secure and simple to implement communication standard to allow share information automatically between fleet operators and vehicle workshops
  - Keep implementation lean and simple
  - Be able to communicate with between any vehicle workshop software and Fleet Management software certificated by "Fleet Software Exchange Standards"
 
-
 ## Communication and transportation channel
-All communication need to be done via https protocol using JSON secured by JWT token
+All communication need to be done via **https** protocol using **JSON** secured by **JWT** token
+### Communication flow
+
+
 
 ## Certificate
 LOGO \
 when you see this logo it means product is compatible with "Fleet Software Exchange Standards" and software can exchange information between any other software where this logo appears. [To find out certificated software please visit this page ](./certificated-software/README.md)
 
  ## Certification Path
- Our certification path is very easy \
- To be able to display our "Fleet Software Exchange Standards" logo on your product your software need to meet our acceptance criteria and pass all postman tests.
- Acceptance criteria and tests are divided on two groups. First group is designed for Fleet management software the second group is designed for vehicle workshops software. \
+ Our certification path is very easy. To be able to display our "Fleet Software Exchange Standards" logo in your product you need to meet our acceptance criteria requirements and pass all postman tests.
+ Acceptance criteria and tests are divided on two groups. First group is designed for fleet management software the second group is designed for vehicle workshops software. \
  If you need any help please contact our team and we will help you with this process. <team@techowls.co.uk>
 
 
