@@ -8,23 +8,24 @@ Standard communication between fleet operator and vehicle workshop \
 *FMS - Fleet Management Software*
 
 ## Problems to solve
-- Scheduling vehicle inspections consume a lot of time for fleet manager.
-- Maintaining documentation on both sides Fleet Operator and Vehicle Workshop consume time and can be done automatically.
+- Scheduling vehicle inspections for bigger fleet is time consuming.
+- Maintaining and sharing documentation for both sides Fleet Operator and Vehicle Workshop require human interaction and is exposed for human errors.
 
 ## Our goal for this project
 
+ - Be able to communicate between any vehicle workshop software and Fleet Management software certificated by "Fleet Software Exchange Standards"
  - Build secure and simple to implement communication standard to allow share information automatically between fleet operators and vehicle workshops
  - Keep implementation lean and simple
- - Be able to communicate with between any vehicle workshop software and Fleet Management software certificated by "Fleet Software Exchange Standards"
+
 
 ## Communication and transportation channel
 All communication need to be done via **https** protocol using **JSON** secured by **JWT** token
 ### Communication flow
-
+![Communication flow](img/certificated-flow.png)
 
 ## Certificate
-LOGO \
-when you see this logo it means product is compatible with "Fleet Software Exchange Standards" and software can exchange information between any other software where this logo appears. [To find out certificated software please visit this page ](./certificated-software/README.md)
+![Logo](logo/logo-small.png) \
+When you see this logo it means product is compatible with "Fleet Software Exchange Standards" and software can exchange information between any other software where this logo appears. [To find out certificated software please visit this page ](./certificated-software/README.md)
 
  ## Certification Path
  Our certification path is very easy. To be able to display our "Fleet Software Exchange Standards" logo in your product you need to meet our acceptance criteria requirements and pass all postman tests.
