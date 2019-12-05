@@ -17,7 +17,7 @@
 	<properties>
 		<java.version>1.8</java.version>
 		<swagger2markup.version>1.2.0</swagger2markup.version>
-		<jackson.version>2.9.7</jackson.version>
+		<jackson.version>2.10.1</jackson.version>
 		<springfox.version>2.9.2</springfox.version>
 		<swagger.output.dir>${project.build.directory}/swagger</swagger.output.dir>
 		<swagger.snippetOutput.dir>${project.build.directory}/asciidoc/snippets</swagger.snippetOutput.dir>
