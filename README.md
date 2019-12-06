@@ -1,40 +1,57 @@
-#  Vehicle Testing Report Exchange Standard
-Current market offer a lot of software helping to manage vehicle workshops from another side you can find a lot of software to manage fleet
-and this two sites need to talk to each another in terms of scheduling services like vehicle inspection, and they need to share documents between each other.
+#  Markup Language - for vehicle documents exchange
+Current market offer a lot of software helping to:
+- Manage a fleet (FM)
+- Manage workshops or garages (WG)
+- Manage renting or leasing vehicles (RL)
+- Manage vehicles for sale (SM) \
 
+When business work together they need share documents between each other for example: \
+
+- HDV/PSV operators to meet DVSA compliance requirements need to receive and store safety inspection from workshops.
+- HDV/PSV operators are responsible to ensure that any hired,
+leased or borrowed vehicle is in a roadworthy condition and has all the necessary
+certification when used on the road.
+- Vehicle resellers often want to share inspections reports.  
+
+In most cases this process need to be repeated many times and is very slow in most cases require manual import/export work between system.   
 ![Standard communication](img/standard-comunication.png)
 
 Standard communication between fleet operator and vehicle workshop \
-*FMS - Fleet Management Software*
-
-## Problems to solve
-- Scheduling vehicle inspections consume a lot of time for fleet manager.
-- Maintaining documentation on both sides Fleet Operator and Vehicle Workshop consume time and can be done automatically.
 
 ## Our goal for this project
+ - Describe secure communication channel to allow share documents between FM, WG, RL, SM.
+ - Build safe and simple to implement markup language for documents.
+ - Build rest tests to give you a tool to test your implementation.
 
- - Build secure and simple to implement communication standard to allow share information automatically between fleet operators and vehicle workshops
- - Keep implementation lean and simple
- - Be able to communicate with between any vehicle workshop software and Fleet Management software certificated by "Fleet Software Exchange Standards"
+## Benefits
+ You as a software provider for transport industry can implement this standard and share/receive documents between system automatically  
+
+## Implementation diagram
+![Implementation diagram](img/implementation-diagram.png)
 
 ## Communication and transportation channel
+This project describe markup language and communication channels.
 All communication need to be done via **https** protocol using **JSON** secured by **JWT** token
-### Communication flow
+## Supported documents
+- Safety inspection record for HGV
+- Safety inspection record for PSV
 
+## Implementation examples and tests
+...
 
+## Data protection
+...
 
 ## Certificate
 LOGO \
-when you see this logo it means product is compatible with "Fleet Software Exchange Standards" and software can exchange information between any other software where this logo appears. [To find out certificated software please visit this page ](./certificated-software/README.md)
+when you see this logo it means product is compatible with "Vehicle Documents Exchange Standard" and software can exchange information between any other software where this logo appears. [To find out certificated software please visit this page ](./certificated-software/README.md)
 
  ## Certification Path
- Our certification path is very easy. To be able to display our "Fleet Software Exchange Standards" logo in your product you need to meet our acceptance criteria requirements and pass all postman tests.
- Acceptance criteria and tests are divided on two groups. First group is designed for fleet management software the second group is designed for vehicle workshops software. \
+ Our certification path is very easy. To be able to display our "Vehicle Documents Exchange Standard" logo in your product you need to meet our acceptance criteria requirements and pass all rest tests.
+ Acceptance criteria and tests are divided on two groups. First group is designed for  software responsible to share documents For Example Workshop/Garage the second group is designed for software will receive documentation for example Fleet Management. \
  If you need any help please contact our team and we will help you with this process. <team@techowls.co.uk>
 
 
  ### Acceptance criteria
- [Acceptance criteria for Fleet Management Software](./acceptance-criteria/fms.md) \
- [Acceptance criteria for Vehicle Workshops Software](./acceptance-criteria/vws.md)
-
- ### Postman test
+ [Acceptance criteria to share documents](./acceptance-criteria/share.md) \
+ [Acceptance criteria to receive documents](./acceptance-criteria/receive.md)
