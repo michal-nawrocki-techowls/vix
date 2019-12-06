@@ -26,7 +26,8 @@ Standard communication between fleet operator and vehicle workshop \
 ## Benefits
  You as a software provider for transport industry can implement this standard and share/receive documents between system automatically  
 
-## Implementation diagram
+## Implementation example
+Fleet Management software - Workshop software
 ![Implementation diagram](img/implementation-diagram.png)
 
 ## Communication and transportation channel
@@ -43,8 +44,8 @@ All communication need to be done via **https** protocol using **JSON** secured 
 ...
 
 ## Certificate
-LOGO \
-when you see this logo it means product is compatible with "Vehicle Documents Exchange Standard" and software can exchange information between any other software where this logo appears. [To find out certificated software please visit this page ](./certificated-software/README.md)
+![Logo](logo/logo-small.png) \
+When you see this logo it means product is compatible with "Fleet Software Exchange Standards" and software can exchange information between any other software where this logo appears. [To find out certificated software please visit this page ](./certificated-software/README.md)
 
  ## Certification Path
  Our certification path is very easy. To be able to display our "Vehicle Documents Exchange Standard" logo in your product you need to meet our acceptance criteria requirements and pass all rest tests.
@@ -59,7 +60,7 @@ when you see this logo it means product is compatible with "Vehicle Documents Ex
  ## JWT token
  ```
  {
- 	"vrm": ["vrm1", "vrm2"],
+ 	"vrm": ["DB51SMR", "DB52SMR"],
  	"document": ["sirhgv", "sirhgv"],
  	"providerUrl": ["https://test.co.uk/example1", "https://test.co.uk/example2"],
  	"validTo": "2021-10-1 3:00 PM GMT+1:00",
