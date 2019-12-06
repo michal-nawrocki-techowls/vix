@@ -33,8 +33,8 @@ Standard communication between fleet operator and vehicle workshop \
 This project describe markup language and communication channels.
 All communication need to be done via **https** protocol using **JSON** secured by **JWT** token
 ## Supported documents
-- Safety inspection record for HGV
-- Safety inspection record for PSV
+- Safety inspection record for HGV (sirhgv)
+- Safety inspection record for PSV (sirpsv)
 
 ## Implementation examples and tests
 ...
@@ -55,3 +55,14 @@ when you see this logo it means product is compatible with "Vehicle Documents Ex
  ### Acceptance criteria
  [Acceptance criteria to share documents](./acceptance-criteria/share.md) \
  [Acceptance criteria to receive documents](./acceptance-criteria/receive.md)
+
+ ## JWT token
+ ```
+ {
+ 	"vrm": ["vrm1", "vrm2"],
+ 	"document": ["sirhgv", "sirhgv"],
+ 	"providerUrl": ["https://test.co.uk/example1", "https://test.co.uk/example2"],
+ 	"validTo": "2021-10-1 3:00 PM GMT+1:00",
+ 	"validFrom": "2019-10-1 3:00 PM GMT+1:00"
+ }
+ ```
