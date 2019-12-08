@@ -1,19 +1,22 @@
-#  Markup Language - for vehicle documents exchange
-Current market offer a lot of software helping to:
-- Manage a fleet (FM)
-- Manage workshops or garages (WG)
-- Manage renting or leasing vehicles (RL)
-- Manage vehicles for sale (SM) \
+#  Vehicle Information Exchange
 
-When business work together they need share documents between each other for example: \
+There are many software products in the market, dedicated to fleet and vehicle servicing.
+These products can generally be groups as:
+- Fleet management (FM)
+- Workshop & garage management (WG)
+- Rental & leasing management (RL)
+- Sales management (SM) \
 
-- HDV/PSV operators to meet DVSA compliance requirements need to receive and store safety inspection from workshops.
-- HDV/PSV operators are responsible to ensure that any hired,
-leased or borrowed vehicle is in a roadworthy condition and has all the necessary
-certification when used on the road.
-- Vehicle resellers often want to share inspections reports.  
+Businesses that operate in the groups often have the need or some times the requirement to
+communicate with others from other groups. This communication is based on exchanging documents. 
+Consider this typical scenarios: \
 
-In most cases this process need to be repeated many times and is very slow in most cases require manual import/export work between system.   
+- HDV/PSV operators need to obtain and store safety inspection data from workshops in order to DVSA compliance requirements.
+- HDV/PSV operators are required to ensure that any hired or 
+leased vehicle is roadworthy condition and hold necessary certificates to use the vehicle on the road.
+- Vehicle resellers often want to access and share inspection reports with other parties.  
+
+The exchange of information for the above cases is very slow and repetitive and in most cases require manual export/import of data.   
 ![Standard communication](img/standard-comunication.png)
 
 Standard communication between fleet operator and vehicle workshop \
