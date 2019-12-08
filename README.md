@@ -37,7 +37,7 @@ errors, improve access to information and allow businesses to focus on their cor
 For software providers, it will increase marketability of the product and help them deliver and 
 shape the industry.
 
-For more information, please refer to wiki pages
+For more information, please refer to [wiki pages](https://github.com/michal-nawrocki-techowls/vehicle-testing-report-exchange/wiki)
 
 ## Contributors
 1. Michal Nawrocki - Chief Architect
