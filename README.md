@@ -40,9 +40,8 @@ shape the industry.
 For more information, please refer to [wiki pages](https://github.com/michal-nawrocki-techowls/vehicle-testing-report-exchange/wiki)
 
 ## Supported documents
-- Safety inspection record for HGV (sirhgv)
-- Safety inspection record for PSV (sirpsv)
-
+- Safety inspection record for HGV/PSV (sir)
+- Vehicle defect record (vdr) 
 ## Implementation examples and tests
 ...
 
