@@ -15,7 +15,7 @@ certification when used on the road.
 
 In most cases this process need to be repeated many times and is very slow in most cases require manual import/export work between system.   
 ![Standard communication](img/standard-comunication.png)
-
+ f
 Standard communication between fleet operator and vehicle workshop \
 
 ## Our goal for this project
