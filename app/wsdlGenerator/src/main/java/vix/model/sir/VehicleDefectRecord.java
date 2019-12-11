@@ -6,18 +6,19 @@ import java.util.List;
 
 public class VehicleDefectRecord {
 
-    //https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/785463/guide-to-maintaining-roadworthiness-commercial-goods-and-passenger-carrying-vehicles.pdf
+    //https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/785463/
+    // guide-to-maintaining-roadworthiness-commercial-goods-and-passenger-carrying-vehicles.pdf
     //page 94-97
 
     @NotNull
     String vrm;
     @NotNull
     Integer odometerReading;
-    @NotNull
+
     String makeAndModelType;
     @NotNull
     Date dateOfInspection;
-    @NotNull
+
     String isoWkNo;
     @NotNull
     String operator;

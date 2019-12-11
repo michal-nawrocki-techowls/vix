@@ -1,7 +1,5 @@
 package vix.model.sir;
 
-import sun.jvm.hotspot.ui.Inspector;
-
 import java.util.Date;
 import java.util.List;
 
