@@ -5,16 +5,10 @@ for systems to exchange information related to vehicle services, safety and deal
 The need to exchange information is driven in part by compliance to government relations, but also for
 day to day operations of fleet managers, workshops, hire & lease operators and dealers.
 
-## The Vehicle business ecosystem
+## The ecosystem
 ![ecosystem](img/vix.png) 
 
 ## The challenge
-The market offers software products that can generally be grouped as:
-- Fleet management (FM)
-- Workshop & garage management (WG)
-- Hire & lease management (RL)
-- Sales management (SM) 
-
 Businesses that operate in the industry often need and/or are required to
 communicate with other parties within the same or across different groups. 
 This communication is based on exchanging information in the form of documents. 
@@ -26,8 +20,7 @@ comply with DVSA requirements.
 leased vehicle is in roadworthy condition and holds valid certificates to operate on the road.
 - Vehicle dealer wants to access and share inspection reports with other parties.  
 
-This exchange of information is very slow, repetitive and 
-in most cases requires manual export/import of data.   
+This exchange of information is very slow, repetitive and in most cases requires manual export/import of data.   
 
 ## Goals of the project
  - Establish a common rule for organizations to communicate with each other in robust and secure way.
@@ -51,7 +44,7 @@ For more information, please refer to [wiki pages](https://github.com/michal-naw
 ## Data protection
 ...
 
-## Certification
+## Certificate
 ![Logo](logo/logo-small.png) \
 When you see this logo it means product is compatible with "Fleet Software Exchange Standards" and software can exchange information between any other software where this logo appears. [To find out certificated software please visit this page ](./certificated-software/README.md)
 
