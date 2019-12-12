@@ -1,4 +1,4 @@
-package vix.model.sir;
+package vix.model.unit;
 
 public enum TemperatureUnit {
     CELSIUS, FAHRENHEIT
