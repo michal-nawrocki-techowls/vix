@@ -6,7 +6,7 @@ The need to exchange information is driven in part by compliance to government r
 day to day operations of fleet managers, workshops, hire & lease operators and dealers.
 
 ## The Vehicle business ecosystem
-![Logo](images/vix.png) 
+![ecosystem](img/vix.png) 
 
 ## The challenge
 The market offers software products that can generally be grouped as:
