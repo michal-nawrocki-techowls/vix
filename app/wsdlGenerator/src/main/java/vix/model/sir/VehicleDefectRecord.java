@@ -12,14 +12,15 @@ public class VehicleDefectRecord {
 
     @NotNull
     String vrm;
-    @NotNull
-    Integer odometerReading;
 
-    String makeAndModelType;
+    int odometerReading;
+
+    @NotNull
+    DistanceUnit distanceUnit;
+
     @NotNull
     Date dateOfInspection;
 
-    String isoWkNo;
     @NotNull
     String operator;
 
@@ -33,10 +34,14 @@ public class VehicleDefectRecord {
     String fileName;
 
     List<Comments> commentsOnFaultsFoundList;
-    List<Comments> actionTakenOnFaultsFoundList;
+    List<ActionTaken> actionTakenOnFaultsFoundList;
 
-    List<DefectRecord> defectRecordList;
-    List<Tyre> tyres;
-    BrakePerformance brakePerformance;
+    List<Inspection> inspectionList;
+    List<Tyre> tyreList;
+    List<Brake> brakeList;
+
+    String makeAndModelType;
+    String isoWkNo;
+
 
 }
