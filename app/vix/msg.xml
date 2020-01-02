@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope
+	xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+	xmlns:sch="http://fleetplanner/vix" xmlns:tns="http://fleetplanner/vix"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<soap:Body>
+		<LoginRequest xmlns="http://fleetplanner/vix">
+			<token>Adam</token>
+		</LoginRequest>
+	</soap:Body>
+</soap:Envelope>
