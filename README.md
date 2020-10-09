@@ -2,8 +2,8 @@
 
 Vehicle Information eXchange is an open-source project established to define and set the standards and protocols
 for systems to exchange information related to vehicle services, safety and dealership.
-The need to exchange information is driven in part by compliance to government relations, but also for
-day to day operations of fleet managers, workshops, hire & lease operators and dealers.
+The need to exchange information is driven in part by compliance to government regulations, but also for
+the day to day operations of fleet managers, workshops, hire & lease operators and dealers.
 
 ## The ecosystem
 ![ecosystem](img/vix.png) 
@@ -24,14 +24,13 @@ This exchange of information is very slow, repetitive and in most cases requires
 
 ## Goals of the project
  - Establish a common rule for organizations to communicate with each other in robust and secure way.
- - Implement a simple and safe markup language for documents foe exchanging information.
- - Provide tools for software providers to test their products against agreed standards
+ - Implement a simple and safe markup language for information exchange documents.
+ - Provide tools for software providers to integrate and test their products against agreed standards.
 
 ## Benefits
 This project will help organizations share information instantly and more securely. It will reduce
 errors, improve access to information and allow businesses to focus on their core activities.
-For software providers, it will increase marketability of the product and help them deliver and 
-shape the industry.
+For software providers, it will increase marketability of their products and help them shape the industry.
 
 For more information, please refer to [wiki pages](https://github.com/michal-nawrocki-techowls/vehicle-testing-report-exchange/wiki)
 
