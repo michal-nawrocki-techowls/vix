@@ -1,10 +1,10 @@
-package vix;
+package wsdl.vix;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class WsdlGeneratorTests {
+class VixApplicationTests {
 
 	@Test
 	void contextLoads() {

@@ -36,7 +36,7 @@ For more information, please refer to [wiki pages](https://github.com/michal-naw
 
 ## Supported documents
 - Safety inspection record for HGV/PSV (SIR)
-- Vehicle defect record (VDR) 
+- MOT test certificate (MOT) 
 ## Implementation examples and tests
 ...
 

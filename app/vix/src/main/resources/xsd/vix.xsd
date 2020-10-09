@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:vix="http://wsdl/vix"
+	targetNamespace="http://wsdl/vix"
+	elementFormDefault="qualified">
+
+	<xs:element name="LoginRequest">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="token">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:minLength value="4" />
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="LoginResponse">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="LoginStatus" type="vix:LoginStatus" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:complexType name="LoginStatus">
+		<xs:sequence>
+			<xs:element name="status" type="vix:Status" />
+			<xs:element name="session" type="xs:string" minOccurs="0" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:simpleType name="Status">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="OK" />
+			<xs:enumeration value="ERROR" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:element name="DocumentRequest">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="id" type="xs:string" minOccurs="0" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="DocumentResponse">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="document" type="vix:Document" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:complexType name="Document">
+			<xs:sequence>
+				<xs:element name="documentType" type="vix:DocumentType" />
+				<xs:element name="vrm" type="xs:string" />
+				<xs:element name="declaration" type="vix:Declaration" />
+				<xs:element name="odometerReading" type="xs:integer" />
+				<xs:element name="dateOfInspection" type="xs:date"/>
+				<xs:element name="fileName" type="xs:string"/>
+				<xs:element name="odometerReadingUnit" type="vix:DistanceUnit" />
+				<xs:element name="defectList" type="vix:Defect" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="Declaration">
+			<xs:sequence>
+				<xs:element name="madeByName" type="xs:string" />
+				<xs:element name="madeByPosition" type="xs:string" />
+				<xs:element name="date" type="xs:dateTime" />
+				<xs:element name="safeAndRoadworthyCondition" type="xs:boolean" />
+			</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="Defect">
+		<xs:sequence>
+			<xs:element name="type" type="vix:DefectType" />
+			<xs:element name="description" type="xs:string" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:simpleType name="DistanceUnit">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="KILOMETRE" />
+			<xs:enumeration value="MILE" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="DefectType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="MINOR" />
+			<xs:enumeration value="MAJOR" />
+			<xs:enumeration value="DANGEROUS" />
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="DocumentType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="MOT" />
+			<xs:enumeration value="SIR" />
+			<xs:enumeration value="OTHER" />
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>
