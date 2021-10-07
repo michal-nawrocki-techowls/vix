@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
-	xmlns:vix="http://vix.fleetplanner.co.uk"
-	targetNamespace="http://vix.fleetplanner.co.uk"
-	elementFormDefault="qualified">
+		   xmlns:vix="http://vix.fleetplanner.co.uk"
+		   targetNamespace="http://vix.fleetplanner.co.uk"
+		   elementFormDefault="qualified">
 
 	<xs:element name="DocumentListRequest">
 		<xs:complexType>
@@ -18,6 +18,8 @@
 		<xs:sequence>
 			<xs:element name="id" type="xs:string"/>
 			<xs:element name="type" type="vix:DocumentType"/>
+			<xs:element name="vrm" type="xs:string" />
+			<xs:element name="dateTime" type="xs:dateTime" minOccurs="0"/>
 		</xs:sequence>
 	</xs:complexType>
 
@@ -53,6 +55,38 @@
 		</xs:complexType>
 	</xs:element>
 
+	<xs:element name="AboutRequest">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="token" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="AboutResponse">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="softwareProvider" type="xs:string" />
+				<xs:element name="companyName" type="xs:string" />
+				<xs:element name="tokenTtl" type="xs:date" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="RefreshTokenRequest">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="token" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="RefreshTokenResponse">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="token" type="xs:string" minOccurs="1" maxOccurs="1"/>
+				<xs:element name="tokenTtl" type="xs:date" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
 	<xs:complexType name="Property">
 		<xs:sequence>
 			<xs:element name="key" type="xs:string"/>
@@ -61,22 +95,22 @@
 	</xs:complexType>
 
 	<xs:complexType name="Document" abstract="true">
-			<xs:sequence>
-				<xs:element name="title" type="xs:string" />
-				<xs:element name="creator" type="xs:string" />
-				<xs:element name="documentType" type="vix:DocumentType" minOccurs="1"/>
-				<xs:element name="vrm" type="xs:string" />
-				<xs:element name="dateTime" type="xs:dateTime" minOccurs="0"/>
-				<xs:element name="fileName" type="xs:string" minOccurs="0"/>
-				<xs:element name="file" type="xs:base64Binary" minOccurs="0"/>
-				<xs:element name="properties">
-					<xs:complexType>
-						<xs:sequence>
-							<xs:element name="property" minOccurs="0" maxOccurs="unbounded"></xs:element>
-						</xs:sequence>
-					</xs:complexType>
-				</xs:element>
-			</xs:sequence>
+		<xs:sequence>
+			<xs:element name="title" type="xs:string" />
+			<xs:element name="creator" type="xs:string" />
+			<xs:element name="documentType" type="vix:DocumentType" minOccurs="1"/>
+			<xs:element name="vrm" type="xs:string" />
+			<xs:element name="dateTime" type="xs:dateTime" minOccurs="0"/>
+			<xs:element name="fileName" type="xs:string" minOccurs="0"/>
+			<xs:element name="file" type="xs:base64Binary" minOccurs="0"/>
+			<xs:element name="properties">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="property" minOccurs="0" maxOccurs="unbounded"></xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
 	</xs:complexType>
 
 	<xs:complexType name="SafetyInspection">

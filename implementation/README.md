@@ -1,6 +1,8 @@
 # Communication between fleet maintenance module and workshop software 
 ### Requirement for Fleet Maintenance Module (FMM)
- - FMM user need to be able to save TOKEN and URL provided by workshop.
+ - FMM user need to be able to save TOKEN and URL provided by workshop. 
+ - FMM need to be able to refresh TOKEN by sending [RefreshTokenRequest](vix.1.0.0.xsd) and receiving [RefreshTokenResponse](vix.1.0.0.xsd)
+ - FMM need to be able to get information about Workshop module by calling [AboutRequest](vix.1.0.0.xsd) and receiving [AboutResponse](vix.1.0.0.xsd)
  - FMM need to get list of documents from URL by sending request [DocumentListRequest](vix.1.0.0.xsd) and receiving [DocumentListResponse](vix.1.0.0.xsd)
  - FMM need to get document details by sending request [DocumentRequest](implementation/vix.1.0.0.xsd) and receiving [DocumentResponse](vix.1.0.0.xsd)
 
