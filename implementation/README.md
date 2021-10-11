@@ -9,6 +9,7 @@
 ### Requirement for workshop software (WS)
 - WS user need to be able to generate TOKEN for each fleet operator
 - WS user need to be able to pass TOKEN and URL to operator (it could be done by email)
+- WS need to be able to provide information about the software by exposing URL waiting for [AboutRequest](vix.1.0.0.xsd) and sending [AboutResponse](vix.1.0.0.xsd)
 - WS need to be able to provide list of documents for operator by exposing URL waiting for [DocumentListRequest](vix.1.0.0.xsd) and sending 
   [DocumentListResponse](vix.1.0.0.xsd)   
 - WS need to be able to provide document details for operator by exposing URL [DocumentRequest](vix.1.0.0.xsd) and receiving [DocumentResponse](vix.1.0.0.xsd)

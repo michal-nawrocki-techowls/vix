@@ -1,0 +1,17 @@
+server:
+  port: 5656
+app:
+  software-provider: Open Source Application
+  company-provider-name: Example Workshop LTD
+  directory-root: /Users/michalnawrocki/Downloads/files/
+
+  db:
+    companies:
+      - name: Company one
+        token: C01TEERW
+        tokenTtlInDays: 365
+        dirName: C1
+      - name: Company two
+        token: C02TXXPT
+        tokenTtlInDays: 365
+        dirName: C2
